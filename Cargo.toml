@@ -1,0 +1,23 @@
+[package]
+name = "boost_locale"
+description = "Boost C++ library boost_locale packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_locale"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_locale"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_charconv = { version = "0.1.0", path = "../boost_charconv" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_predef = { version = "0.1.0", path = "../boost_predef" }
+boost_thread = { version = "0.1.0", path = "../boost_thread" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
